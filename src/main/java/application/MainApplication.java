@@ -12,7 +12,7 @@ import sun.management.Sensor;
 public class MainApplication {
 
     public static void main(String[] args) {
-        /*I2cController i2cComms = new I2cController();
+        I2cController i2cComms = new I2cController();
 
         while (Button.ESCAPE.isUp()) {
             int id = Button.waitForAnyPress();
@@ -21,12 +21,6 @@ public class MainApplication {
             }
         }
 
-        i2cComms.close();*/
-
-        NXTRegulatedMotor motor = Motor.A;
-        motor.setSpeed(50);
-        while(Button.ESCAPE.isUp()) {
-
-        }
+        i2cComms.close();
     }
 }
